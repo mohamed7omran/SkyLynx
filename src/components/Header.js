@@ -12,7 +12,7 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   // const dispatch = useDispatch();
   // const darkMode = useSelector((state) => state.darkMode.darkMode);
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   // const session = useSession();
   // console.log("session => ", session);
   // const status = session?.status;
@@ -27,12 +27,12 @@ const Header = () => {
   //   document.body.style.backgroundColor = darkMode ? "#000000" : "#ffffff";
   // }, [darkMode]);
 
-  // const toggleMenu = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
-  // const handleToggleDarkMode = () => {
-  //   dispatch(toggleDarkMode(!darkMode)); // Toggle dark mode
-  // };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const handleToggleDarkMode = () => {
+    setDarkMode(!darkMode); // Toggle dark mode
+  };
   return (
     <>
       <header
@@ -86,7 +86,7 @@ const Header = () => {
       <header
         className={`${
           darkMode ? "dark" : ""
-        } dark:bg-black max-sm:hidden flex items-center justify-between max-w-4xl mx-auto p-4`}
+        }  bg-slate-300 max-sm:hidden flex items-center justify-between  mx-auto p-6`}
       >
         <nav className="flex items-center gap-8 text-gray-500 font-semibold">
           <Link
