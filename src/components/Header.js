@@ -86,39 +86,42 @@ const Header = () => {
       <header
         className={`${
           darkMode ? "dark" : ""
-        }  bg-slate-300 max-sm:hidden flex items-center justify-between  mx-auto p-6`}
+        }  bg-slate-100 max-sm:hidden flex items-center justify-between  mx-auto p-6`}
       >
         <nav className="flex items-center gap-8 text-gray-500 font-semibold">
-          <Link
-            className="text-lightPrimary dark:text-primary font-semibold text-2xl"
-            href="/"
-          >
-            <span className="text-lightSecondary dark:text-white">AI EX</span>
-            CHANGE
+          <Link className="text-lightPrimary font-semibold text-2xl" href="/">
+            <span className="text-blue-400">SK</span>
+            YLYNX
           </Link>
           <Link
-            className="hover:text-lightPrimary dark:hover:text-primary duration-500"
+            className="hover:text-blue-400 dark:hover:text-primary duration-500"
             href={"/"}
           >
             Home
           </Link>
           <Link
-            className="hover:text-lightPrimary dark:hover:text-primary duration-500"
+            className="hover:text-blue-400 dark:hover:text-primary duration-500"
             href={"#models"}
           >
-            Models
+            Recorder
           </Link>
           <Link
-            className="hover:text-lightPrimary dark:hover:text-primary duration-500"
+            className="hover:text-blue-400 dark:hover:text-primary duration-500"
             href={"#about"}
           >
-            About
+            MD Assistant
           </Link>
           <Link
-            className="hover:text-lightPrimary dark:hover:text-primary duration-500"
+            className="hover:text-blue-400 dark:hover:text-primary duration-500"
             href={"#contactUs"}
           >
-            Contact
+            Reports
+          </Link>
+          <Link
+            className="hover:text-blue-400 dark:hover:text-primary duration-500"
+            href={"#contactUs"}
+          >
+            Settings
           </Link>
         </nav>
         <nav className="flex items-center gap-4 text-gray-500 font-semibold">
@@ -141,7 +144,7 @@ const Header = () => {
                 Login
               </Link>
               <Link
-                className="bg-lightPrimary dark:bg-primary rounded-full text-white px-8 py-2"
+                className="bg-blue-400 dark:bg-primary rounded-full text-white px-8 py-2"
                 href={"/register"}
               >
                 Register
