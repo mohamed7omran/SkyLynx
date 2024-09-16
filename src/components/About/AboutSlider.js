@@ -9,40 +9,45 @@ import "swiper/css/navigation";
 import Slide1 from "./Slide1";
 import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
+import { useSelector } from "react-redux";
 
 const AboutSlider = () => {
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+
   return (
-    <section className="h-screen">
-      <Swiper
-        breakpoints={{
-          slidesPerView: 1,
-          spaceBetween: 15,
-        }}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={{
-          nextEl: ".custom-swiper-button-next",
-          prevEl: ".custom-swiper-button-prev",
-        }}
-        modules={[FreeMode, Pagination, Navigation, Autoplay]}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        className="max-w-[90%] lg:max-w-[80%]"
-      >
-        <SwiperSlide>
-          <Slide1 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide2 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide3 />
-        </SwiperSlide>
-      </Swiper>
+    <section className={`${darkMode ? "dark" : ""}`}>
+      <div className=" h-screen dark:bg-darkPrimary">
+        <Swiper
+          breakpoints={{
+            slidesPerView: 1,
+            spaceBetween: 15,
+          }}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={{
+            nextEl: ".custom-swiper-button-next",
+            prevEl: ".custom-swiper-button-prev",
+          }}
+          modules={[FreeMode, Pagination, Navigation, Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          className="max-w-[90%] lg:max-w-[80%]"
+        >
+          <SwiperSlide>
+            <Slide1 />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slide2 />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Slide3 />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </section>
   );
 };

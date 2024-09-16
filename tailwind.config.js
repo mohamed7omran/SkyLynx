@@ -8,13 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // primary: "#f1f5f9",
-        // secondary: "#60a5fa",
-        // lightPrimary: "#2563eb",
-        // lightSecondary: "#b9bfc4",
+        primary: "#f1f5f9",
+        secondary: "#60a5fa",
+        darkPrimary: "#0f172a",
+        darkSecondary: "#b9bfc4",
         // SecondText: "#a39ca8",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };

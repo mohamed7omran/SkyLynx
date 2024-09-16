@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Feature from "../FeatuersSection/feature";
 import { useState } from "react";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import {
   FcInspection,
@@ -14,16 +14,16 @@ import {
 } from "react-icons/fc";
 
 export default function Features() {
-  // const darkMode = useSelector((state) => state.darkMode.darkMode);
-  const [darkMode, setDarkMode] = useState();
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+  // const [darkMode, setDarkMode] = useState(true);
   return (
-    <section className="">
+    <section className={`${darkMode ? "dark" : ""}`}>
       <div
         style={{ position: "relative" }}
-        className="max-sm:h-full md:max-lg:h-full h-screen flex items-center justify-center  "
+        className="max-sm:h-full md:max-lg:h-full h-screen flex items-center justify-center dark:bg-slate-800  "
       >
         <div className=" inset-0 flex items-center justify-center p-4  ">
-          <div className="max-w-6xl grid grid-cols-2 gap-4 max-sm:gap-2 md:max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:h-full  max-sm:py-2 ">
+          <div className="max-w-6xl grid grid-cols-2 gap-8 max-sm:gap-2 md:max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:h-full  max-sm:py-2 ">
             <Feature
               title={"Accurate report"}
               body={

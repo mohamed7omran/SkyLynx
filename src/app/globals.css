@@ -58,21 +58,3 @@ body {
 .visible {
   opacity: 1;
 }
-/* !=============== quote ============== */
-.quote::before {
-  content: open-quote;
-  font-size: 4rem;
-  color: white;
-  position: absolute;
-  left: -1.5rem;
-  top: -1.5rem;
-}
-
-.quote::after {
-  content: close-quote;
-  font-size: 4rem;
-  color: white;
-  position: absolute;
-  right: -1.5rem;
-  bottom: -1.5rem;
-}

@@ -2,17 +2,16 @@
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 const Footer = () => {
-  // const darkMode = useSelector((state) => state.darkMode.darkMode);
-  const [darkMode, setDarkMode] = useState(false);
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+  // const [darkMode, setDarkMode] = useState(false);
 
   const { ref, inView } = useInView({
     triggerOnce: false, // Repeats the animation every time it's in view
   });
 
-  // Animation variants for Framer Motion
   const slideUpVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -25,7 +24,7 @@ const Footer = () => {
     <section className={` ${darkMode ? "dark" : ""}`}>
       <motion.footer
         ref={ref}
-        className="mt-10 bg-slate-100 dark:bg-secondary h-full"
+        className=" bg-slate-100 dark:bg-gray-800 h-full"
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={slideUpVariants}
