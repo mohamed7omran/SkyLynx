@@ -66,9 +66,9 @@ const Hero = () => {
     <section
       className={`${
         darkMode ? "dark" : ""
-      } bg-[url('/doc5.jpg')] bg-opacity-50 bg-cover bg-center bg-fixed h-screen md:max-lg:h-full max-sm:h-[600px] bg-no-repeat hero mx-auto md:max-lg:flex md:max-lg:items-center md:max-lg:justify-between`}
+      } bg-[url('/doc5.jpg')] bg-opacity-50 bg-cover bg-center bg-fixed h-screen md:max-lg:h-full max-sm:h-[500px] bg-no-repeat hero mx-auto md:max-lg:flex md:max-lg:items-center md:max-lg:justify-between`}
     >
-      <div className="py-32 md:max-lg:px-16 max-sm:px-6  text-slate-100 dark:teg7 max-sm:py-6 bg-black/30  p-32 h-full">
+      <div className="py-32 md:max-lg:px-16 max-sm:px-6  text-slate-100 dark:teg7 max-sm:py-12  bg-black/30  p-32 h-full w-full">
         <h1 className="text-6xl md:max-lg:text-4xl max-sm:text-3xl font-semibold typing-text text-lightPrimary dark:text-primary h-[147px]">
           <span className="typing-text">{part1}</span>
           <br />
@@ -83,7 +83,7 @@ const Hero = () => {
         <div className="flex gap-4 text-sm">
           <button
             onClick={redirectToLogin}
-            className="bg-secondary dark:bg-secondary flex justify-center uppercase  items-center gap-2 text-slate-100 px-4 py-2 max-sm:p-0  rounded-full text-sm hover:bg-lightSecondary dark:hover:bg-secondary duration-500"
+            className="bg-secondary dark:bg-secondary flex justify-center uppercase  items-center gap-2 text-slate-100 px-4 py-2 max-sm:p-2  rounded-full text-sm  hover:bg-lightSecondary dark:hover:bg-secondary duration-500"
           >
             Get started
             <Right />

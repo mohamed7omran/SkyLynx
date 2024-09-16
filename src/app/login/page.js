@@ -97,7 +97,7 @@ const LoginPage = () => {
                   <button
                     type="button"
                     // onClick={() => signIn("google", { callbackUrl: "/" })}
-                    className="flex gap-4 justify-center text-gray-500"
+                    class=" flex gap-4 justify-center w-full text-black dark:text-white border-2  hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
                     <Image
                       src={"/google.png"}

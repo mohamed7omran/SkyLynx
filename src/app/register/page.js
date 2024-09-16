@@ -8,14 +8,14 @@ const RegisterPage = () => {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
   return (
     <section
-      className={`mt-8 flex items-center justify-center mb-10  ${
+      className={`mt-8 flex items-center justify-center mb-10 max-sm:px-7  ${
         darkMode ? "dark" : ""
       }`}
     >
       <div class="w-full  bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-            Login to your account
+            Create your account
           </h1>
           <form class="space-y-4 md:space-y-6 block max-w-sm mx-auto">
             <div>
