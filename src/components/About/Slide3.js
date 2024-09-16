@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Slide3 = () => {
   return (
-    <section className="flex justify-between items-center h-[700px] md:max-lg:px-5">
+    <section className="flex justify-between items-center h-[700px] md:max-lg:px-5 ">
       <div className="flex flex-col justify-center items-center w-1/2 md:max-lg:mr-4">
         <div>
           <Image

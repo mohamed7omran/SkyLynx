@@ -66,9 +66,9 @@ const Hero = () => {
     <section
       className={`${
         darkMode ? "dark" : ""
-      } bg-[url('/doc5.jpg')] bg-opacity-50   bg-cover bg-center bg-fixed h-screen md:max-lg:h-full bg-no-repeat hero mx-auto md:max-lg:flex md:max-lg:items-center md:max-lg:justify-between`}
+      } bg-[url('/doc5.jpg')] bg-opacity-50 bg-cover bg-center bg-fixed h-screen md:max-lg:h-full max-sm:h-[600px] bg-no-repeat hero mx-auto md:max-lg:flex md:max-lg:items-center md:max-lg:justify-between`}
     >
-      <div className="py-32 md:max-lg:px-16 text-slate-100 dark:teg7 max-sm:py-0 bg-black/30  p-32 h-full">
+      <div className="py-32 md:max-lg:px-16 max-sm:px-6  text-slate-100 dark:teg7 max-sm:py-6 bg-black/30  p-32 h-full">
         <h1 className="text-6xl md:max-lg:text-4xl max-sm:text-3xl font-semibold typing-text text-lightPrimary dark:text-primary h-[147px]">
           <span className="typing-text">{part1}</span>
           <br />
