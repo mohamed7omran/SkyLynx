@@ -20,7 +20,7 @@ const AboutSlider = () => {
         <Swiper
           breakpoints={{
             slidesPerView: 1,
-            spaceBetween: 15,
+            spaceBetween: 20,
           }}
           freeMode={true}
           pagination={{

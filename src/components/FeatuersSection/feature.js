@@ -14,7 +14,7 @@ const Feature = ({ icon, title, body }) => {
   return (
     <div
       ref={ref}
-      className={` group p-5 flex justify-between items-center text-center opacity-90 rounded-lg  bg-white dark:bg-primary duration-300 ${
+      className={` group p-5 md:max-lg:p-3 flex justify-between items-center text-center opacity-90 rounded-lg  bg-white dark:bg-primary duration-300 ${
         inView ? "animate-fade-in-up" : "opacity-0"
       } ${darkMode ? "dark" : ""}`}
     >
@@ -24,7 +24,7 @@ const Feature = ({ icon, title, body }) => {
         </div>
       </div>
       <div>
-        <h5 class=" text-2xl max-sm:text-lg text-start font-semibold tracking-tight group-hover:text-blue-400 dark:group-hover:text-secondary duration-500 text-black dark:text-black">
+        <h5 class=" text-2xl md:max-lg:text-xl max-sm:text-lg text-start font-semibold tracking-tight group-hover:text-blue-400 dark:group-hover:text-secondary duration-500 text-black dark:text-black">
           {title}
         </h5>
         <p class="mb-3 text-gray-400 text-start font-normal max-sm:text-sm text-SecondText">

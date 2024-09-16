@@ -8,9 +8,9 @@ const Slide1 = () => {
     <section
       className={`${
         darkMode ? "dark" : ""
-      } flex justify-between items-center h-[700px] `}
+      } flex justify-between items-center h-[700px] md:max-lg:px-5 `}
     >
-      <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="flex flex-col justify-center items-center w-1/2 md:max-lg:mr-4">
         <div>
           <Image
             src="/doc4.jpg"

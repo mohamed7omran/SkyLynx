@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Slide2 = () => {
   return (
-    <section className="flex justify-between items-center h-[700px] ">
-      <div className="flex flex-col justify-center items-center w-1/2">
+    <section className="flex justify-between items-center h-[700px] md:max-lg:px-5">
+      <div className="flex flex-col justify-center items-center w-1/2 md:max-lg:mr-4">
         <div className="text-center">
           <h1 className="mb-5 text-2xl dark:text-primary">MOHAMED OMRAN</h1>
           <p className="text-xl mb-10 dark:text-primary">
