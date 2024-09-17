@@ -76,10 +76,12 @@ const Hero = () => {
           <br />
           <span className="typing-text">{part3}</span>
         </h1>
-        <p className="my-6 md:max-lg:mt-0 max-sm:my-0 max-sm:mb-5 text-white dark:text-gray-700 text-sm">
-          Connecting patients and doctors for a healthier tomorrow, where every
-          interaction improves well-being and care.
-        </p>
+        <div className=" ">
+          <p className="lg:mt-16 mb-5 md:max-lg:mt-0 max-sm:my-0 max-sm:mb-5 text-white dark:text-gray-700 text-sm">
+            Connecting patients and doctors for a healthier tomorrow, where
+            every interaction improves well-being and care.
+          </p>
+        </div>
         <div className="flex gap-4 text-sm">
           <button
             onClick={redirectToLogin}
