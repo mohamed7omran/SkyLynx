@@ -11,9 +11,9 @@ const Profile = () => {
   }, []);
 
   return (
-    <div class="p-4 mt-5 ">
-      <div className="flex justify-center ">
-        <div className="ml-5">
+    <div class="p-4 md:mt-5 ">
+      <div className="flex justify-center max-sm:flex-col ">
+        <div className="ml-5 max-sm:mb-6 max-sm:flex max-sm:flex-col max-sm:items-center ">
           <div className="w-32 h-32 relative border-double border-4  border-blue-400 rounded-full">
             <Image
               src="/doc2.jpg" // Replace with your image path
@@ -25,7 +25,7 @@ const Profile = () => {
           <input
             type="file"
             accept="image/*"
-            className="mt-5 cursor-pointer text-sm text-gray-500"
+            className="mt-5 cursor-pointer text-sm text-gray-500 max-sm:ml-20"
           />
         </div>
         <form class="max-w-lg mt-3">

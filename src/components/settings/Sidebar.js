@@ -51,7 +51,7 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
-                href="MD-Assistant"
+                href="/MD-Assistant"
                 // className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 className={`${
                   activeSidebar === "MDAssistant"
@@ -109,7 +109,7 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
-                href="/settings"
+                href="/settings/general"
                 // class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 className={`${
                   activeSidebar === "settings"
@@ -133,7 +133,7 @@ const Sidebar = () => {
                 <span class="flex-1 ms-3 whitespace-nowrap">Settings</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/notifications"
                 // class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -158,7 +158,7 @@ const Sidebar = () => {
                 </svg>
                 <span class="flex-1 ms-3 whitespace-nowrap">Notifications</span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#"

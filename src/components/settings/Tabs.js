@@ -2,6 +2,8 @@
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
+import { IoNotificationsCircleSharp } from "react-icons/io5";
+
 const Tabs = () => {
   const activeTab = useSelector((state) => state.tabs.activeTab);
 
@@ -32,7 +34,7 @@ const Tabs = () => {
             General
           </Link>
         </li>
-        <li class="me-2">
+        {/* <li class="me-2 ">
           <Link
             href="/settings/notifications"
             // class="inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
@@ -43,7 +45,7 @@ const Tabs = () => {
             }`}
           >
             <svg
-              class={`w-4 h-4 me-2  group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300 ${
+              class={`w-4 h-4 me-2 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300 ${
                 activeTab === "notifications"
                   ? "text-blue-500"
                   : "text-gray-400"
@@ -51,13 +53,13 @@ const Tabs = () => {
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              viewBox="0 0 20 20"
+              viewBox="0 2 20 20"
             >
-              <path d="M5 11.424V1a1 1 0 1 0-2 0v10.424a3.228 3.228 0 0 0 0 6.152V19a1 1 0 1 0 2 0v-1.424a3.228 3.228 0 0 0 0-6.152ZM19.25 14.5A3.243 3.243 0 0 0 17 11.424V1a1 1 0 0 0-2 0v10.424a3.227 3.227 0 0 0 0 6.152V19a1 1 0 1 0 2 0v-1.424a3.243 3.243 0 0 0 2.25-3.076Zm-6-9A3.243 3.243 0 0 0 11 2.424V1a1 1 0 0 0-2 0v1.424a3.228 3.228 0 0 0 0 6.152V19a1 1 0 1 0 2 0V8.576A3.243 3.243 0 0 0 13.25 5.5Z" />
+              <path d="M 12 2 C 11.172 2 10.5 2.672 10.5 3.5 L 10.5 4.1953125 C 7.9131836 4.862095 6 7.2048001 6 10 L 6 16 L 4.4648438 17.15625 L 4.4628906 17.15625 A 1 1 0 0 0 4 18 A 1 1 0 0 0 5 19 L 12 19 L 19 19 A 1 1 0 0 0 20 18 A 1 1 0 0 0 19.537109 17.15625 L 18 16 L 18 10 C 18 7.2048001 16.086816 4.862095 13.5 4.1953125 L 13.5 3.5 C 13.5 2.672 12.828 2 12 2 z M 10 20 C 10 21.1 10.9 22 12 22 C 13.1 22 14 21.1 14 20 L 10 20 z"></path>
             </svg>
             Notifications
           </Link>
-        </li>
+        </li> */}
         <li class="me-2">
           <Link
             href="/settings/profile"

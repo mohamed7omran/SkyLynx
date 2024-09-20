@@ -28,7 +28,7 @@ const MDAssistant = () => {
   };
 
   return (
-    <div className="flex flex-col p-3 bg-blue-50 w-full h-screen ">
+    <div className="flex flex-col max-sm:h-screen  p-3 bg-blue-50 w-full h-screen ">
       <div className="flex-grow">
         <div className="relative h-full">
           <div className="overflow-y-auto absolute inset-0">
