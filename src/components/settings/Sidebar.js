@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { SiOpenaigym } from "react-icons/si";
 const Sidebar = () => {
   const activeSidebar = useSelector((state) => state.sidebar.activeSidebar);
 
@@ -15,15 +16,7 @@ const Sidebar = () => {
         <div>
           <div className="flex items-center p-2 mb-10 mt-5">
             <div className=" text-center">
-              <svg
-                class="flex-shrink-0 w-5 h-5 text-secondary transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 18 18"
-              >
-                <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
-              </svg>
+              <SiOpenaigym className="text-secondary text-3xl" />
             </div>
             <div className="ml-3">
               <h1 className="text-2xl font-medium text-secondary">SKYLYNX</h1>
@@ -35,15 +28,15 @@ const Sidebar = () => {
                 href="/recorder"
                 className={`${
                   activeSidebar === "recorder"
-                    ? "text-blue-500 dark:text-blue-500"
-                    : "text-blue-500"
-                } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+                    ? "text-secondary dark:text-secondary hover:text-secondary"
+                    : ""
+                }  group flex items-center p-2 text-gray-400 hover:text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
               >
                 <svg
                   className={`w-5 h-5 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ${
                     activeSidebar === "recorder"
-                      ? "text-blue-500 group-hover:text-blue-500"
-                      : "text-gray-500"
+                      ? "text-secondary dark:text-secondary group-hover:text-secondary"
+                      : "text-gray-400"
                   }`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,15 +55,15 @@ const Sidebar = () => {
                 // className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 className={`${
                   activeSidebar === "MDAssistant"
-                    ? "text-blue-600 dark:text-blue-500"
+                    ? "text-secondary dark:text-secondary hover:text-secondary"
                     : ""
-                } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+                } flex items-center p-2 text-gray-400 hover:text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
               >
                 <svg
                   className={`w-5 h-5 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ${
                     activeSidebar === "MDAssistant"
-                      ? "text-blue-500 group-hover:text-blue-500"
-                      : "text-gray-500"
+                      ? "text-secondary dark:text-secondary group-hover:text-secondary"
+                      : "text-gray-400"
                   }`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,15 +84,15 @@ const Sidebar = () => {
                 // class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 className={`${
                   activeSidebar === "reports"
-                    ? "text-blue-600 dark:text-blue-500"
+                    ? "text-secondary dark:text-secondary hover:text-secondary"
                     : ""
-                } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+                } flex items-center p-2 text-gray-400 hover:text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
               >
                 <svg
                   className={`w-5 h-5 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ${
                     activeSidebar === "reports"
-                      ? "text-blue-500 group-hover:text-blue-500"
-                      : "text-gray-500"
+                      ? "text-secondary dark:text-secondary group-hover:text-secondary"
+                      : "text-gray-400"
                   }`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,15 +113,15 @@ const Sidebar = () => {
                 // class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 className={`${
                   activeSidebar === "settings"
-                    ? "text-blue-600 dark:text-blue-500"
+                    ? "text-secondary dark:text-secondary hover:text-secondary"
                     : ""
-                } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+                } flex items-center p-2 text-gray-400 hover:text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
               >
                 <svg
                   className={`flex-shrink-0 w-5 h-5 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ${
                     activeSidebar === "settings"
-                      ? "text-blue-500 group-hover:text-blue-500"
-                      : "text-gray-500"
+                      ? "text-secondary dark:text-secondary group-hover:text-secondary"
+                      : "text-gray-400"
                   }`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,15 +139,15 @@ const Sidebar = () => {
                 // class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                 className={`${
                   activeSidebar === "notifications"
-                    ? "text-blue-600 dark:text-blue-500"
+                    ? "text-secondary dark:text-secondary hover:text-secondary"
                     : ""
-                } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+                } flex items-center p-2 text-gray-400 hover:text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
               >
                 <svg
                   className={`w-5 h-5 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white ${
                     activeSidebar === "notifications"
-                      ? "text-blue-500 group-hover:text-blue-500"
-                      : "text-gray-500"
+                      ? "text-secondary dark:text-secondary group-hover:text-secondary"
+                      : "text-gray-400"
                   }`}
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"

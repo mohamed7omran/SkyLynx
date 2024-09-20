@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/style": "^0.8.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.1",
     "@reduxjs/toolkit": "^2.2.7",
     "framer-motion": "^11.5.4",
     "install": "^0.13.0",

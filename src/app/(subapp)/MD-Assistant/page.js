@@ -5,10 +5,11 @@ import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 
 const MDAssistant = () => {
-  const dispatch = useDispatch();
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [senderStatus, setSenderStatus] = useState(false);
+
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setActiveSidebar("MDAssistant"));
     /// handle update scroll on new message.
